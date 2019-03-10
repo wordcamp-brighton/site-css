@@ -1,0 +1,407 @@
+/*-- here's the WordCamp Brighton theme style --*/
+p, li {
+	font-size: 20px;
+	line-height: 36px;
+	letter-spacing: 2px;
+}
+
+/* don't make the menu size too big */
+li.menu-item {
+	font-size: 14px;
+	letter-spacing: 0;
+}
+.main-navigation a {
+    padding: 1em 0.95em;
+}
+/* hide some stuff we don't want to see */
+span.edit-link,
+#post-2 {
+	visibility: hidden;
+	height: 0;
+}
+
+/* center menu */
+#top-menu.menu {
+	text-align: center;
+}
+
+/*-- header stuff --*/
+.navigation-top .wrap {
+    padding: 0 3.4166666666667em;
+}
+.custom-header-media:before {
+background:transparent;
+}
+.wp-custom-header {
+display:none;
+}
+.home .wp-custom-header {
+display:block;
+}
+
+/*---- date banner ------*/
+	.datebanner {
+	z-index: 0;
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+	top: 5px;
+	color: #7A3CBC;
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	padding-bottom: 10px;
+}
+.datebanner p{
+	margin: 0;
+	padding: 5px 20px;
+	border-radius: 6px;
+	background-color: #fff;
+	display: inline;
+	border: 2px solid #7538bc;
+}
+.home .custom-logo,
+.home .datebanner {
+display:none;
+}
+.site-footer .wrap {
+	padding:0;
+	margin:0;
+	max-width: 100%;
+}
+.site-footer .widget-column.footer-widget-1 {
+    float: none;
+    width: 100%;	
+}
+/*---- .date banner ------*/
+
+.home .entry-title {
+display: none;
+}
+/*---- Sponsors page ------*/
+.page-slug-sponsors h2 {
+	font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+    margin-top: 90px;
+	background-repeat: no-repeat;
+	background-position: center top;	
+}
+.page-slug-sponsors .wcorg-sponsor-level-pavilion h2 {
+	background-image: url(https://2018.brighton.wordcamp.org/files/2018/06/WCB18-Pavillion.jpg);
+	    padding: 330px 0 30px 0;
+}
+.page-slug-sponsors .wcorg-sponsor-level-i360 h2 {
+	background-image: url(https://2018.brighton.wordcamp.org/files/2018/06/WCB18-i360.jpg);
+	    padding: 330px 0 30px 0;
+}
+.page-slug-sponsors .wcorg-sponsor-level-brighton-pier h2 {
+	background-image: url(https://2018.brighton.wordcamp.org/files/2018/06/WCB18-Pier.jpg);
+	    padding: 330px 0 30px 0;
+}
+.page-slug-sponsors .wcorg-sponsor-level-west-pier h2 {
+	background-image: url(https://2018.brighton.wordcamp.org/files/2018/06/WCB18-WestPier.jpg);
+	    padding: 330px 0 30px 0;
+}
+
+.page-slug-sponsors .wcorg-sponsor-level-clock-tower h2 {
+	background-image: url(https://2018.brighton.wordcamp.org/files/2018/07/Clocktower-sponsorship-e1530539987385.png);
+	    padding: 360px 0 30px 0;
+}
+.page-slug-sponsors .wcorg-sponsor-level-in-kind h2 {
+background-image: url(https://2018.brighton.wordcamp.org/files/2018/08/In-kind-Sponsorship-e1533114484912.png);
+	padding: 360px 0 30px 0;
+}
+.page-slug-sponsors h3 {
+	display:none
+}
+.page-slug-sponsors  .wcorg-sponsors ul {
+	margin-left:30px
+} 
+.page-slug-sponsors .wcorg-sponsor {
+	margin-bottom:130px;
+}
+
+/*---- .Sponsors page ------*/
+
+/*---- Scheduler page ------*/
+.wcpt-session-title {
+color: #351354
+}
+.wcpt-session-speakers {
+display:block;	
+	    padding: 10px 0 20px 0;
+}
+.wcpt-session-speakers a{
+	text-decoration:none;
+	font-weight: 600;
+}
+.wcpt-session-speakers:before {
+   content: "Spoken by: ";
+}
+.wcb-track-one, wcb-track-workshops {
+    width: auto;
+}
+@media screen and (min-width: 800px) { 
+	.wcb-track-one, wcb-track-workshops {
+    	width: 32%;
+	}
+}
+.wcpt-schedule td {
+    vertical-align: top;
+    padding: 20px 0.4em;
+}
+.wcpt-time {
+background:#efefef;
+	font-weight:bold;
+	color:#8641ce;
+}
+/*---- .Scheduler page ------*/
+/* Logo animation (slow rotation) */
+#rotatelogo,
+img.custom-logo {
+	-webkit-animation: rotation 120s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/* Optional fancy box border with gradient site colours */
+.box-border {
+	padding: 10px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+}
+
+.box-content {
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+/* Non-HomePage banner background image */
+.site-header {
+	/* background: url(https://2018.brighton.wordcamp.org/files/2018/02/banner.01.png) no-repeat center top scroll; */
+	background: url(https://2018.brighton.wordcamp.org/files/2018/03/WCB2018Sub-Page.jpg) no-repeat center top scroll;
+}
+.home .site-header {
+background:none;
+}
+
+/* Main HomePage image 
+.has-header-image.twentyseventeen-front-page .custom-header {
+background: url(https://2018.brighton.wordcamp.org/files/2018/02/logo-large.png) 
+		top center  /* position / size */	
+     		no-repeat                /* repeat */
+     		scroll                    /* attachment */
+     		padding-box              /* origin */
+     		content-box              /* clip */
+     		transparent;                     /* color */
+		background-size: contain;
+	
+}
+*/
+@media screen and (min-width: 425px) { }
+.has-header-image.twentyseventeen-front-page .custom-header {
+	 
+	     	background:url(https://2018.brighton.wordcamp.org/files/2018/04/wcb18-header-homepage-transparent_1024.png)    /* image */
+     		top center  /* position / size */	
+     		no-repeat                /* repeat */
+     		scroll                    /* attachment */
+     		padding-box              /* origin */
+     		content-box              /* clip */
+     		transparent;                     /* color */
+		background-size: contain;	
+	}
+.has-header-image.twentyseventeen-front-page .site-header{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7e7e7+0,cdcdcd+100 */
+		background: #e7e7e7; /* Old browsers */
+		background: -moz-linear-gradient(top, #e7e7e7 0%, #cdcdcd 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #e7e7e7 0%,#cdcdcd 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #e7e7e7 0%,#cdcdcd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#cdcdcd',GradientType=0 ); /* IE6-9 */
+		}	
+	
+
+/* Persuade the logo to be a bit bigger */
+a.custom-logo-link img {
+	max-height: 150px;
+}
+
+.site-header {
+/* background: url(https://2018.brighton.wordcamp.org/files/2018/02/banner.01.png) no-repeat center top scroll; */
+	background: url('https://2018.brighton.wordcamp.org/files/2018/03/WCB2018Sub-Page.jpg') no-repeat center top scroll;
+	background-size: contain;
+}
+
+.site-branding {
+	padding: 22vw 0;
+}
+
+/* Home page "sections" background images etc. */
+
+/* Home page "sections" background images etc. */
+#panel1 {
+	background-image: url('https://2018.brighton.wordcamp.org/files/2018/03/WCB18-Greeting-Card-PSD-MockUp.png');
+}
+
+#panel3 {
+	background-image: url('https://2018.brighton.wordcamp.org/files/2018/03/WCB18-Homepage-Pattern.jpg');
+}
+
+#panel1 .panel-content .wrap,
+#panel3 .panel-content .wrap {
+	padding: 60px 0;
+	height: calc(100vh - 68px);
+}
+
+#panel2 .panel-content .wrap {
+	padding: 60px 0;
+}
+
+#panel2 .panel-content .wrap,
+#panel3 .panel-content .wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#panel1 .panel-content .wrap header.entry-header,
+#panel2 .panel-content .wrap header.entry-header {
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+}
+
+h1.entry-title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 42px !important;
+	letter-spacing: 4px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+#panel1 h1,
+#panel2 h2,
+#panel3 h2 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 54px;
+	letter-spacing: 4px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+#panel1 p,
+#panel2 p,
+#panel3 p {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+#panel2 h2 {
+	color: #000;
+	margin-bottom: 30px;
+}
+
+#panel2 p {
+	color: #000;
+	margin-bottom: 30px;
+}
+
+#panel3 h2 {
+	margin-bottom: 30px;
+}
+
+#panel1, #panel2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-top: 0;
+}
+
+#panel1, #panel2, #panel1 h2, #panel2 h2, .site-header .navigation-top {
+	color: #fff;
+}
+
+#panel3 a:not(.btn) {
+	color: #fff;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,1);
+	box-shadow: inset 0 -1px 0 rgba(255,255,255,1);
+}
+
+#panel3 a:hover:not(.btn) {
+	-webkit-box-shadow: inset 0 0 0 rgba(255,255,255, 0), 0 3px 0 rgba(255,255,255, 1);
+	box-shadow: inset 0 0 0 rgba(255,255,255, 0), 0 3px 0 rgba(255,255,255, 1);
+}
+
+/* buttons - specifically home page */
+a.btn {
+	color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 10px 26px;
+	background-color: #dc53eb;
+	border-radius: 28px;
+	transition: background-color 200ms, color 300ms;
+}
+
+a.btn:hover {
+	color: #fff;
+	background-color: #df75eb;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn-align-bottom {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+/* Styling for Attendee's page */
+#tix-attendees li {
+	min-height: 120px;
+	padding: 5px;
+	border-radius: 0 15px 0 15px;
+}
+
+#tix-attendees li img {
+	border: 2px solid #645aee;
+	border-radius: 50%;
+}
+
+.tix-field.tix-attendee-name span {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+a.tix-field {
+	color: #645aee;
+	line-height: 22px;
+	box-shadow: none;
+}
+
+a.tix-field:hover {
+	color: #4e46ba;
+	box-shadow: none;
+}
+
