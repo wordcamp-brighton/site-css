@@ -1,0 +1,129 @@
+/**
+ * Site Header - Hero
+ */
+
+.site-header {
+	display: flex;
+	min-height: 75vh;
+}
+
+.site-header .custom-header {
+	flex: 1 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-image: url(); /* Add media library image here */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+/* Overlay for more legible text */
+.site-header .custom-header::before {
+	background-color: rgba( 0, 0, 0, 0.25 );
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.site-branding {
+	margin-bottom: 0 !important; /* Override for theme JS - sorry! */
+}
+
+.site-branding .site-title,
+.site-branding .site-title a {
+	color: #fff;
+}
+
+
+/**
+ * Site Header - Navigation
+ */
+
+.site-header .navigation-top {
+	background: transparent;
+	border: 0;
+	top: 0;
+	bottom: auto;
+}
+
+/* Floating/fixed header (desktop) */
+@media screen and (min-width: 48em) {
+	.site-header .navigation-top.site-navigation-fixed {
+		background-color: #fff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+	}
+}
+
+.main-navigation .menu {
+	text-align: center;
+}
+
+.main-navigation .menu-item a,
+.main-navigation .menu-item.current-menu-item > a,
+.main-navigation .menu-item.current_page_item > a {
+	position: relative;
+	padding: 0;
+	margin: .75em;
+}
+
+@media screen and (min-width: 48em) {
+	.main-navigation .menu-item a,
+	.main-navigation .menu-item.current-menu-item > a,
+	.main-navigation .menu-item.current_page_item > a {
+		color: #fff;
+	}
+
+	/* Current item underline (psudo-element) */
+	.main-navigation .menu-item.current-menu-item > a::after,
+	.main-navigation .menu-item.current_page_item > a::after {
+		content: '';
+		height: 3px;
+		width: 100%;
+		background-color: #2ffbc3;
+		bottom: -3px;
+		left: 0;
+		position: absolute;
+	}
+
+	.navigation-top.site-navigation-fixed .menu-item a,
+	.navigation-top.site-navigation-fixed .menu-item.current-menu-item > a,
+	.navigation-top.site-navigation-fixed .menu-item.current_page_item > a  {
+		color: #000;
+	}
+}
+
+
+/**
+ * Buttons
+ */
+
+.btn,
+.entry-content .btn {
+	background-color: #dd4d68;
+	box-shadow: none;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 26px;
+	border-radius: 28px;
+	transition: background-color 200ms, color 300ms;
+}
+
+.btn:hover,
+.entry-content .btn:hover {
+	box-shadow: none;
+}
+
+
+/**
+ * Home page
+ */
+
+.home .site-main > article:first-child {
+	display: none; /* Hide first content panel on home page */
+}
