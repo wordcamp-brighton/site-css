@@ -92,9 +92,9 @@
 		position: absolute;
 	}
 
-	.navigation-top.site-navigation-fixed .menu-item a,
-	.navigation-top.site-navigation-fixed .menu-item.current-menu-item > a,
-	.navigation-top.site-navigation-fixed .menu-item.current_page_item > a  {
+	.navigation-top.site-navigation-fixed ul.menu > .menu-item a,
+	.navigation-top.site-navigation-fixed ul.menu > .menu-item.current-menu-item > a,
+	.navigation-top.site-navigation-fixed ul.menu > .menu-item.current_page_item > a  {
 		color: #000;
 	}
 }
