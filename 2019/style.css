@@ -124,9 +124,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 @media screen and (min-width: 48em) {
-  .main-navigation .menu-item a,
-  .main-navigation .menu-item.current-menu-item > a,
-  .main-navigation .menu-item.current_page_item > a {
+  .main-navigation ul.menu > .menu-item > a,
+  .main-navigation ul.menu > .menu-item.current-menu-item > a,
+  .main-navigation ul.menu > .menu-item.current_page_item > a {
     color: #fff;
   }
 
