@@ -1,10 +1,11 @@
 /**
  * Site Header - Hero
  */
-
-.site-header {
-	display: flex;
-	min-height: 75vh;
+@media screen and (min-width: 48em) {
+	.site-header {
+		display: flex;
+		min-height: 75vh;
+	}
 }
 
 .site-header .custom-header {
