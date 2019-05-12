@@ -9,16 +9,19 @@
 }
 
 .site-header .custom-header {
+	position: relative;
 	flex: 1 0 auto;
 
 	display: flex;
-	align-items: center;
+	align-items: top;
 	justify-content: center;
 
 	background-image: url(); /* Add media library image here */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
+
+	margin-bottom: 0 !important; /* Override for theme JS - sorry! */
 }
 
 /* Overlay for more legible text */
@@ -32,29 +35,89 @@
 	left: 0;
 }
 
+.has-header-image.twentyseventeen-front-page .site-branding,
+.has-header-video.twentyseventeen-front-page .site-branding,
+.has-header-image.home.blog .site-branding,
+.has-header-video.home.blog .site-branding {
+	vertical-align: top;
+}
+
+.has-header-image.twentyseventeen-front-page .site-branding,
+.has-header-video.twentyseventeen-front-page .site-branding,
+.has-header-image.home.blog .site-branding,
+.has-header-video.home.blog .site-branding {
+	bottom:inherit;
+	top:3.2em;
+}
+
 .site-branding {
 	margin-bottom: 0 !important; /* Override for theme JS - sorry! */
+	padding-top: 0;
+	padding-bottom: 1em;
+	@media screen and (min-width: 60em) {
+		padding:0;
+	}
+	/*
+	@media screen and (min-width: 61em) {
+		padding-bottom: 4em;
+	}
+	*/
 }
 
-.site-branding .site-title,
-.site-branding .site-title a {
-	color: #fff;
+.site-branding .wrap {
+	padding: 0;
 }
 
+.site-branding .site-title { 
+	display: none;
+}
+
+.site-description {
+	padding-top: 14.3em;
+}
+
+body.home .site-description {
+	padding-top: 15em;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+	display: block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.custom-header::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 28%;
+	height: 40%;
+	width: 40%;
+	background: no-repeat center / contain url(https://2019.brighton.wordcamp.org/files/2019/05/logo-white.png);
+	transform: translate( -50%, -50% );
+	@media screen and (min-width: 48em) {
+		width: 30%;
+		height: 30%;
+		top: 28%;
+	}
+}
 
 /**
  * Site Header - Navigation
  */
-
 .site-header .navigation-top {
-	background: transparent;
-	border: 0;
-	top: 0;
-	bottom: auto;
+	z-index: 100;
 }
 
 /* Floating/fixed header (desktop) */
 @media screen and (min-width: 48em) {
+	.site-header .navigation-top {
+		background: transparent;
+		border: 0;
+		top: 0;
+		bottom: auto;
+	}
+
 	.site-header .navigation-top.site-navigation-fixed {
 		background-color: #fff;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
@@ -96,6 +159,14 @@
 	.navigation-top.site-navigation-fixed ul.menu > .menu-item.current-menu-item > a,
 	.navigation-top.site-navigation-fixed ul.menu > .menu-item.current_page_item > a  {
 		color: #000;
+	}
+
+	.has-header-image.twentyseventeen-front-page .site-branding,
+	.has-header-video.twentyseventeen-front-page .site-branding,
+	.has-header-image.home.blog .site-branding,
+	.has-header-video.home.blog .site-branding {
+		bottom: 20%;
+		padding-bottom: 1em;
 	}
 }
 

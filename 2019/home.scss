@@ -1,0 +1,68 @@
+.navigation-top {
+	font-size: 20px;
+}
+
+#panel1 h2.entry-title,
+#panel2 h2.entry-title,
+#panel3 h2.entry-title {
+	display: none;
+}
+
+#panel1,
+#panel3 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-top: 0;
+
+	.panel-content .wrap {
+		height: calc(100vh - 90px);
+		padding: 60px 0;
+	}
+}
+
+#panel1 {
+	background-image: url('https://2019.brighton.wordcamp.org/files/2019/05/you-are-invided.jpg');
+	height: calc(100vh - 90px);
+
+	.wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+}
+
+#panel1,
+#panel2,
+#panel3 {
+	.wp-block-button {
+		text-align: center;
+		
+		a {
+			background-color: #dd4d68;
+		}
+	}
+	
+	header {
+		margin-bottom: 0;
+	}
+}
+
+#panel3 {
+	background-image: url('https://2019.brighton.wordcamp.org/files/2019/05/WCB18-Homepage-Pattern.jpg');
+	height: calc(100vh - 90px);
+	
+	.wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h2, p, a {
+		color: white;
+		text-align: center;
+	}
+}
+
