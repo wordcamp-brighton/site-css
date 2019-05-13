@@ -13,13 +13,9 @@
 	flex: 1 0 auto;
 
 	display: flex;
-	align-items: top;
+	align-items: normal;
 	justify-content: center;
-
-	background-image: url(); /* Add media library image here */
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
+	height: 66vh;
 
 	margin-bottom: 0 !important; /* Override for theme JS - sorry! */
 }
@@ -73,11 +69,7 @@
 }
 
 .site-description {
-	padding-top: 14.3em;
-}
-
-body.home .site-description {
-	padding-top: 15em;
+	display: none;
 }
 
 body:not(.title-tagline-hidden) .site-branding-text {
@@ -93,7 +85,8 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	top: 28%;
 	height: 40%;
 	width: 40%;
-	background: no-repeat center / contain url(https://2019.brighton.wordcamp.org/files/2019/05/logo-white.png);
+	min-width: 230px;
+	background: no-repeat center / contain url(https://2019.brighton.wordcamp.org/files/2019/05/logo-white-date.png);
 	transform: translate( -50%, -50% );
 	@media screen and (min-width: 48em) {
 		width: 30%;
