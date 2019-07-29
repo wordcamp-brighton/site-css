@@ -1,0 +1,21 @@
+/* Blog Page post grid boxes - relevant only to page-id-2432*/
+.page-id-2432 ul.wp-block-latest-posts.is-grid.columns-3 li{
+	border-style:solid;
+	border-width:2.8px;
+	border-color:#75c8a9;
+	border-radius:10px;
+	padding:2%;
+	background-color:#ffffff;
+}
+/*End*/
+
+/* Hover : Blog Page post grid boxes - relevant only to page-id-2432*/
+.page-id-2432 ul.wp-block-latest-posts.is-grid.columns-3 li:hover{
+	transition: all .5s ease-in-out;
+	border-color:#474747;
+	-webkit-box-shadow: 0px 3px 		8px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 3px 8px		0px rgba(0,0,0,0.5);
+	box-shadow: 0px 3px 8px 0px 		rgba(0,0,0,0.5);
+	transform: scale(1.025);  
+}
+/*End*/
