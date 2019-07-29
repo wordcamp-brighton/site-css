@@ -377,3 +377,16 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .registration-opens-available-all-day {
   background-color: #eee;
 }
+
+table.wcpt-schedule {
+  table-layout: fixed;
+}
+
+.wcpt-col-time {
+  width: 15%;
+}
+
+.wcorg-speaker-description img.avatar {
+  float: left;
+  margin: 0.2em 1em 0.25em 0;
+}
