@@ -391,3 +391,8 @@ table.wcpt-schedule {
   float: left;
   margin: 0.2em 1em 0.25em 0;
 }
+
+.type-wcb_speaker .speaker-avatar,
+.wcorg-speaker-description img.avatar {
+  background-color: #eee;
+}
